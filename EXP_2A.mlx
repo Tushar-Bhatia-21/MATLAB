@@ -1,0 +1,42 @@
+EXPERIMENT - 1(B)
+
+Aim:
+Creating One-Dimensional Array(Row/ Column Vector) ; Creating a Two - Dimensional Array (Matrix of a given size)
+Software used:
+ MATLAB R2022b
+
+Procedure:
+% Arrays Used: 
+
+A=[1 2 3;4 5 6;7 8 9]
+
+B=[10 11 12;13 14 15; 16 17 18]
+
+% ADDITION
+C=A+B
+
+% SUBTRACTION
+D=A-B
+
+% Multiplication
+E=A*B
+
+% Exponentiation
+F=exp(A)
+
+Discussion:
+
+Matrix Addition (+):
+A+B adds A and B, A and B must have the same dimensions, unless one is scalar.
+Matrix Subtraction (-):
+A-B subtracts A and B, A and B must have the same dimensions, unless one is scalar.
+Matrix Multiplication (*):
+A*B is the linear algebraic product of A and B. The number of columns of A must be equal to the number of rows of B, unless one is scalar.
+Exponentiation:
+Y=exp(X)
+It returns the exponential for each element of X.
+Result:
+Two-Dimensional Matrix were created and Arithemetic Operations: +,-,*,exp() were successfully performed in them.
+
+Conclusion:
+Various Arithemetic Operations were successfully operated and results were obtained.
