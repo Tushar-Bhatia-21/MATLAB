@@ -1,0 +1,29 @@
+EXPERIMENT - 1(A)
+
+Aim:
+Creating One-Dimensional Array(Row/ Column Vector) ; Creating a Two - Dimensional Array (Matrix of a given size)
+Software used:
+ MATLAB R2022b
+
+Procedure:
+% Arrays Used: 
+
+A=[1 2 3]
+
+B=[10 11 12;13 14 15; 16 17 18]
+
+Discussion:
+
+Creating a Matrix:
+In MATLAB we use the matrix constructor operator [ ] or with the colon operator(first:step:last).
+Creating one dimensional Matrix:
+Simply enter elements separated by comma or space.
+row=[E1,E2,....Em]
+Creating two dimensional Matrix:
+To start a new row, terminate the current row with a semicolon.
+Result:
+One-Dimensional and Two-Dimensional Matrix were succesfully created.
+
+Conclusion:
+One-Dimensional and Two-Dimensional Matrix were succesfully created using constructor operator [ ] and colon operator (first:step:last).
+
