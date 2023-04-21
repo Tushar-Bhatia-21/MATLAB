@@ -1,0 +1,34 @@
+EXPERIMENT - 1(C)
+
+Aim:
+Performing Matrix Operations - Inverse, Transpose, Rank.
+Software used:
+ MATLAB R2022b
+
+Procedure:
+% Arrays Used: 
+
+A=[50 20 30;10 90 40;100 80 70]
+
+% Inverse
+B=inv(A)
+
+% Transpose
+C=transpose(A)
+
+% Rank
+D=rank(A)
+
+Discussion:
+
+Inverse Operation:
+Y=inv(X) returns the inverse of the square matrix X.
+Transpose Operation:
+B=transpose(A) returns the transpose of the matrix.
+Rank Operation:
+k=rank(A)
+Result:
+Two-Dimensional Matrix is created and Matrix operations: Inverse, Transpose and Rank were perfromed on it.
+
+Conclusion:
+Various Matrix Operations were successfully operated and results were obtained.
