@@ -1,0 +1,49 @@
+EXPERIMENT - 4(C)
+
+Aim:
+Generating and Plots of Logarithmic and other functions and other Functions - log(A),log10(A), Square root of A, Real nth root of A.
+Software used:
+ MATLAB R2022b
+Procedure:
+x=1:1:20
+
+% Log X
+l=log(x)
+plot(x,l)
+title('Log(x)')
+xlabel('Values of X')
+ylabel('log(x)')
+
+% Log10 X
+m=log10(x)
+plot(x,m)
+title('Log(10x)')
+xlabel('Values of X')
+ylabel('log(10x)')
+
+% Sqrt(X)
+s=sqrt(x)
+plot(x,s)
+title('sqrt(x)')
+xlabel('Values of X')
+ylabel('sqrt(x)')
+
+% nth root(x)
+n=nthroot(x,5)
+plot(x,n)
+title('5th Root(X)')
+xlabel('Values of X')
+ylabel('5th root(x)')
+Discussion: 
+Logarithmic Functions:
+l=log(X) returns the natural logarithm of elements of X.
+m=Log10(X) returns the base 10 logarithm of the elements of X.
+Square root:
+s=sqrt(x) returns the square root of each element of vector x. 
+Real nth root of A:
+y=nthroot(x,n) returns the real nth root of elements of X. Both X and n must be a real. N must be scalar. If X has negative entries, n must be an odd integer.
+Result:
+Matrices were created and logarithmic functions and other functions were generated and plotted. And plotting was done using plot,subplot and stem functions.
+ Conclusion:
+Various logarithmic and other functions were generated and plotted.
+
