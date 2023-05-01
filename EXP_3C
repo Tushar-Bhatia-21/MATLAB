@@ -1,0 +1,35 @@
+EXPERIMENT - 3(C)
+
+Aim:
+Generating a Random Sequence using rand()/randn() functions and plotting them.
+Software used:
+ MATLAB R2022b
+Procedure:
+X=rand(4)
+Y=randn(3)
+
+subplot(1,2,1)
+plot(X)
+title('Plot of X')
+xlabel('X-axis')
+ylabel('Y-axis')
+
+subplot(1,2,2)
+plot(Y)
+title('Plot of Y')
+xlabel('X-axis')
+ylabel('Y-axis')
+
+Discussion: 
+Generating Random Sequence: 
+R=randn(n) returns an n-by-n matrix containing pseudorandom values drawn from the standard normal distribution while r=rand(n) returns an n-by-n matrix containing pseudorandom values drawn from the standard uniform distribution on the open interval (0,1). 
+Plotting using plot(): 
+Plot(Y) plots the columns of Y versus the index of each value when Y is a real number and plot (X1, Y1,…,Xn,Yn)plots each vector Yn versus vector Xn on the same axes. Functions xlabel and ylabel were used to label x and y axis. 
+Plotting using stem(): 
+It plots discrete sequence data. Stem(X,Y) plots X versus the columns of Y. X and Y must be vectors or matrices of the same size. 
+Subplot():
+Subplot divides the current figure into rectangular panes that are numbered rowwise. H=subplot(m,n,p) or subplot(mnp) breaks the figure window into an m-by-n matrix of small axes, selects the pth axes object for the current plot, and returns the axes handle. 
+Result:
+Random sequence was generated using rand () and randn(). And plotting was done using plot, subplot and stem functions.
+ Conclusion:
+Functions rand, randn, plot, subplot and stem were successfully performed.
