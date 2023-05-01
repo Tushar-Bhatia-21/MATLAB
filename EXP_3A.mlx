@@ -1,0 +1,29 @@
+EXPERIMENT - 3(A)
+
+Aim:
+Generating a set of Commands on a given Vector (Example: X=[1 5 6 8 9 4] to add up the values of the elements (Check with sum)
+Software used:
+ MATLAB R2022b
+
+Procedure:
+X=[1 5 6 8 9 4]
+
+% SUM
+Y=sum(X)
+
+% Sum of some elements
+A=sum(X(3:4))
+
+% Cumulative Sum
+Z=cumsum(X)
+
+Discussion:
+Sum of all/specific elements of a vector were calculated using sum ().
+sum(A) returns the sum of all the elements of the vector.
+sum(A(i:j)) returns the sum of ith to jth elements of a vector
+
+Result:
+Matries were created and sum of all as well as specific elements was calculated using sum().
+
+Conclusion:
+Vector was created and sum of all as well as specific elemetns was successfully calculated.
