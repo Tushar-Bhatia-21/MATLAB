@@ -1,0 +1,43 @@
+EXPERIMENT - 2(B)
+
+Aim:
+ To perform concatenating,shifting,Indexing,Sorting,Shifting,Reshaping,Resizing and Flipping about a vertical/horizontal axis
+Software used:
+ MATLAB R2022b
+
+Procedure:
+% Arrays Used 
+
+D=[1,2,3;4,5,6;7,8,9]
+
+E=[9,8,7;6,5,4;3,2,1]
+
+% Equal to
+Equal_to=eq(D,E)
+
+% Less Than
+Less_than=lt(D,E)
+
+%Greater Than
+Greater_than=gt(D,E)
+
+%Less Than Equal To
+Less_than_equal=le(D,E)
+
+%Greater Than Equal to
+Greater_than_equal=ge(D,E)
+
+%Not Equal to
+Not_equal=ne(D,E)
+
+Discussion:
+
+Relational Operations:
+Test for equality/greater than or equal/ greater than/ less than or equal/ less than/ inequality is performed using eq/ ge/ gt/ le/ lt/ ne. respectively.
+
+The realtional operators are <,>,<=,>=,== and ~=. Relational operators perform comparision element-by-element between two arrays. They return a logical array of same size, with elements set to logical 1 (true) where the relation is true, and elements set to logical 0 (false) where it is not.
+
+Result:
+Matrices were created and Relation Operations (<,>,<=,>=,==,~=) were performed on them.
+Conclusion:
+Various Matrix Manipulations were successfully operated and results were obtained.
