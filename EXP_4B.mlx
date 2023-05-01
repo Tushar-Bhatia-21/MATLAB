@@ -1,0 +1,109 @@
+EXPERIMENT - 4(B)
+
+Aim:
+Generating and Plots of Trignometric Functions - sin(t),cos(t),tan(t),sec(t),cosec(t), and cot(t) for a given duration, 't'.
+Software used:
+ MATLAB R2022b
+Procedure:
+% Generating and Plotting Trignometric Functions
+
+t=-pi:0.3:pi
+
+% Generating and Plotting Sin(t)
+
+X=sin(t)
+subplot(4,3,1)
+plot(t,X)
+xlabel("t")
+ylabel('sin(t)')
+title('Sin(t)')
+subplot(4,3,2)
+stem(t,X)
+xlabel('t')
+ylabel('sin(t)')
+title('Sin(t)')
+% -----------------------
+% Generating and Plotting Cos(t)
+
+Y=cos(t)
+subplot(4,3,3)
+plot(t,Y)
+xlabel("t")
+ylabel('cos(t)')
+title('Cos(t)')
+subplot(4,3,4)
+stem(t,Y)
+xlabel('t')
+ylabel('cos(t)')
+title('Cos(t)')
+
+% Generating and Plotting tan(t)
+
+t=(-pi/2)+0.05:0.05:(pi/2)-0.05
+Z=tan(t)
+subplot(4,3,5)
+plot(t,Z)
+xlabel("t")
+ylabel('tan(t)')
+title('Tan(t)')
+subplot(4,3,6)
+stem(t,Z)
+xlabel('t')
+ylabel('tan(t)')
+title('Tan(t)')
+
+% Generating and Plotting asin(t)
+t=-1:0.02:1
+
+A=asin(t)
+subplot(4,3,7)
+plot(t,A)
+xlabel("t")
+ylabel('asin(t)')
+title('Cosec(t)')
+subplot(4,3,8)
+stem(t,A)
+xlabel('t')
+ylabel('asin(t)')
+title('Cosec(t)')
+
+% Generating and Plotting acos(t)
+B=acos(t)
+t=-1:0.02:1
+subplot(4,3,9)
+plot(t,B)
+xlabel("t")
+ylabel('acos(t)')
+title('Sec(t)')
+subplot(4,3,10)
+stem(t,B)
+xlabel('t')
+ylabel('acos(t)')
+title('Sec(t)')
+
+% Generating and Plotting atan(t)
+C=atan(t)
+t=-5:0.1:5
+subplot(4,3,11)
+plot(t,C)
+xlabel("t")
+ylabel('atan(t)')
+title('Cot(t)')
+subplot(4,3,12)
+stem(t,C)
+xlabel('t')
+ylabel('atan(t)')
+title('Cot(t)')
+Discussion: 
+Trignometric Functions:
+Y=round(X) rounds the elements of X to the nearest integers. Positive elements with a fractional part of 0.5 round up to the nearest positive integer. Negative elements with a fractional part of -0.5 down to the nearest negative integer.
+Plotting using plot():
+Plot(Y) plots the columns of Y versus the index of each value when Y is a real number and plot(X1,Y1...XnYn) plots each vector Yn versus vector Xn on the same axis. Functions xlabel and ylabel were used to label x and y axis. 
+Plotting using stem():
+It plots discrete sequence data. Stem(X,Y) plots X versus the columns of Y,X and Y must be vectors or matrices of the same size.
+Subplot():
+Subplot divides the current figure into rectangular panes that are numbered rowwise. h =subplit(m,n,p) or subplot(mnp) breaks the figure window into an m by n matrix of small axes, selects the pth axes object for the current plit, returns the axes handle.
+Result:
+Matrices were created and trignometric functions were generated and plotted. And plotting was done using plot,subplot and stem functions.
+ Conclusion:
+Various trignometric functions were generated and plotted.
