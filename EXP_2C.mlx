@@ -1,0 +1,43 @@
+EXPERIMENT - 2(C)
+
+Aim:
+Creating Arrays X & Y of given size (1 x N) and Performing Logical Operations - ~,&,|,XOR
+Software used:
+ MATLAB R2022b
+
+Procedure:
+% Arrays Used
+
+F=[1,0,1;0,0,1;1,0,0]
+
+G=[0,0,1;1,1,0;1,0,1]
+
+% NOT
+Not=~F
+
+% AND
+And=F&G
+
+% OR
+Or=F|G
+
+% XOR
+Xor=xor(F,G)
+
+Discussion:
+
+Logical Operations:
+The symbols &,|,~,xor are the logical array operators AND, OR, NOT and exclusive OR. Logical Operations return a logical array with elements set to 1 (true) or 0 (false), as appropriate.
+Logical AND (&):
+expr1 & expr 2 represents a logical AND operation between values, arrays or expressions expr1 and expr2. In an AND operation, if expr1 is true and expr2 is true, then the AND of those inputs is true. If either expression is false, the result is false.
+Logical OR (|):
+expr1 | expr 2 represents a logical OR operation between values, arrays or expressions expr1 and expr2. In an OR operation, if expr1 is true and expr2 is true, then the AND of those inputs is true. If both expression is false, the result is false.
+Logical NOT (~):
+~expr  represents a logical NOT applied on expression expr. In a NOT operation, if expr is true result is false. If expr is false, result is true.
+Exculsive OR (xor):
+C=xor(A,B) performs an exclusive OR operation on the corresponding elements of arrays A and B. The resulting element C(i,j,...) is logical true (1) if A(i,j...) or B(i.j...), but not both, is non zero.
+Result:
+Matrices were created and Logical Operations(~,&,|,XOR) were performed on them.
+
+Conclusion:
+Various Matrix Manipulations were successfully operated and results were obtained.
