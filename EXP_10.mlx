@@ -1,0 +1,28 @@
+EXPERIMENT - 10
+
+Aim:
+Basic 2D and 3D plots: parametric space curve, polygon with vertices. 3D contour Lines. Pie and Bar Graph plots.
+Software used:
+ MATLAB R2022b
+Procedure:
+X=[10,15,25,40]
+bar(X)
+bar3(X)
+pie(X)
+pie3(X)
+
+% Contour and Polygons
+x=[0 0 0;1 1 -1;1 -1 -1]
+y=[0 0 0;5 5 5;6 6 6]
+z=[0 0 0;1 1 -1;1 1 1]
+v=rand(3)
+fill(x,y,z)
+fill3(x,y,z,v)
+grid on
+contour(x)
+contour(x,y,z)
+Discussion:
+contour(Z) creates a contour plot containing the isolines of matrix Z, where Z contains height values on the x-y plane. MATLAB® automatically selects the contour lines to display. The column and row indices of Z are the x and y coordinates in the plane, respectively. The polygon is plotted using the same principles. "pie3(X)" draws a three-dimensional pie chart using the data in X. Each slice of the pie chart represents an element in X.
+Conclusion
+Graph of polygon, pie, bar along with contour lines were plotted.
+
