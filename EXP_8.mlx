@@ -1,0 +1,21 @@
+EXPERIMENT - 8
+Aim:
+Solving the first order Ordinary Differential Equation using a Built-in Function. Consider the following Differential equation as: 
+xy'+2y=x^3, where y'=dy/dx and y'=(x^3-2y)/x, 1<x<3 and y=4.2
+Software used:
+ MATLAB R2022b
+Procedure:
+ode_1=@(x,y)(x^3-2*y)/x
+[x,y]=ode45(ode_1,1:0.01:3,4.2)
+
+% Plotting The Ordinary Differential Equation
+
+plot(x,y,'linewidth',2)
+xlabel('X'),ylabel('Y'),grid on
+title('Solution to ODE,dy/dx=(x^3-2*y)/x')
+Discussion: 
+Ode45: ode45 is based on Runge-Kutta formulae. It is a one step solver in computing y(tn), it needs only the solution at the immediately preceding time pount, y(tn-1)
+ Conclusion:
+The solution to the ordinary differential equation using ode45 is calculated and plot is made on graph.
+
+
