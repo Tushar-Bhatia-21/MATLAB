@@ -1,0 +1,83 @@
+EXPERIMENT - 2(A)
+Aim:
+To perform concatenating,shifting,Indexing,Sorting,Shifting,Reshaping,Resizing and Flipping about a vertical/
+horizontal axis
+Software used:
+MATLAB R2022b
+Procedure:
+% Arrays Used: 
+A=[1 2 3;4 5 6;7 8 9]
+
+B=[10 11 12;13 14 15; 16 17 18]
+
+
+% CONCATENATION
+%horizontal Concatenation
+Horizontal_Concatenation=horzcat(A,B)
+
+
+%vertical Concatenation
+Vertical_Concatenation=vertcat(A,B)
+
+
+% INDEXING
+%indexing columnwise
+indexing_columnwise=A(:,2)
+
+
+%indexing rowwise
+indexing_rowwise=A(1,:)
+
+
+%indexing_element
+indexing_element=A(1,3)
+
+
+% SORTING
+%sorting
+sort_a=sort(A)
+
+% sorting_rows
+sort_rows=sortrows(A)
+
+
+% SHIFTING
+% shifting right
+Circular_shift=circshift(A,2)
+
+% shifting left
+Circluar_left=circshift(A,[2,-1])
+
+
+% RESHAPING
+%reshaping - Considering new Array C
+C=[10,20,30,40,50;1,2,3,4,5;60,70,80,90,100]
+
+reshaping=reshape(C,[5,3])
+
+% FLIPPING
+%flipping about vertical axis
+Flip_vertical=fliplr(A)
+
+
+%flipping about horizontal axis
+Flip_horizontal=flipud(A)
+
+
+Discussion:
+Concatenation: It is the process of joining one or matrices to make one or more matrices using horzcat or 
+vertcat. To horizontally concatenate or vertically concatenate matrices respectively.
+Indexing: To reference a particular element in a matrix, specify its row and column number using the following 
+syntax: A(row,column)
+Sorting: The sort function sorts matrix elements along a specified dimension. Syntax for the function is: 
+sort(matrix, dimension,'mode').
+Shifting: The circshift function shifts the elements of a matrix in a circular manner along one or more 
+dimensions. Rows or columns that are shifted out of the matrix circulate back into the opposite end.
+Flipping: Flip_vertical= fliplr(A) returns A with columns flipped in the left-right direction.
+
+Result:
+Matrices were created and Matrix Manipulations (Concatenating, Indexing, Sorting, Shifting, Reshaping, 
+Resizing, and Flipping) were performed on them.
+
+Conclusion:
+Various Matrix Manipulations were successfully operated and results were obtained.
