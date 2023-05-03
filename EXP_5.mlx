@@ -1,0 +1,48 @@
+EXPERIMENT - 5
+
+Aim:
+Creating a vector X with elements, X(n) = (-1)^n+1/(2*n-1) and Adding up 100 elements of vector X, and plotting the functions, x,x^3,e^x,e^x^2 over the interval 0<x<4( by choosing appropriate mesh values for x to obtain smooth curves), on A rectangular plot
+Software used:
+ MATLAB R2022b
+Procedure:
+% Creating Vector X
+for n=1:10
+    X(n)=((-1)^(n+1))/(2*n-1) 
+end
+
+Y=sum(X(n))
+
+% Creating interval Vector Z
+Z=0.04:0.04:4
+
+plot(Z,X)
+xlabel('Z')
+ylabel('X(n)')
+title('plot of X')
+
+% PLotting X^3
+A=X.^3
+plot(Z,A)
+xlabel('Z')
+ylabel("X^3")
+title('Plotting X^3')
+
+% Plotting e^x
+B=exp(X)
+plot(Z,B)
+xlabel('Z')
+ylabel("e^X")
+title('Plotting e^X')
+
+% Plotting e^(x^2)
+C=exp(X.^2)
+plot(Z,C)
+xlabel('Z')
+ylabel("e^(X^2)")
+title('Plotting e^(X^2)')
+Discussion: 
+The vector was constructed using for loop and the given formulae. And sum of all elements was calculated using sum(). Then functions x,x^3,e^x,exp(x^2) were plotted over the interval 0<x<4 using plot().
+Result:
+Vector X was created and subsequently x,x^3,e^x,exp(x^2) were plotted over the interval 0<x<4.
+ Conclusion:
+Several function(x,x^3,e^x,exp(x^2)) were successfully plotted for a vector X.
