@@ -1,0 +1,34 @@
+EXPERIMENT - 7
+Aim:
+Writing brief scripts starting each script with request for t and evaluate the expression h(t) using if else statement where h(T)= (T-10), for 0<T<100
+h(T)=(0.45T+900), for T>100
+Software used:
+ MATLAB R2022b
+Procedure:
+H=0;
+T=input('Enter the value of T: ');
+if(T==0)
+    disp('Enter the value greater than 0');
+else if(T>0 && T<100)
+        fprintf('For T=%d',T);
+        H=(T-10);
+else if(T>100)
+        fprintf('For T=%d',T);
+        H=((0.45*T)+900);
+        end
+        end
+end
+fprintf('H=%d',H);
+Discussion: 
+If-else statements: If expression1 evaluates as false and expression 2 as true, MATLAB executes the one or more commands denoted here as Statements 2. A true expression has either a logical true or non zero value.
+Result:
+Output was obtained.
+Enter the value of T: 5
+    For T=5
+    H=-5
+Enter the value of T: 101
+    For T=101
+    H = 945.4500
+ Conclusion:
+The experiment calculated value of T and H according to the given if-else condition
+
