@@ -1,0 +1,61 @@
+EXPERIMENT - 6
+
+Aim:
+Generating a Sinusoidal Signal of a given frequency with Titling, Labeling, Adding Text, Adding Legends, Printing Text in Greek Letters, Plotting as Multiple and Subplot. Time scale the generated signal for different values. E.g. 2X, 4X, 0.25X, 0.0625X.
+Software used:
+ MATLAB R2022b
+Procedure:
+%   Generating parameter t
+
+t=0:0.05*pi:2*pi
+
+%   Generating sin(t)
+subplot(2,1,1)
+X=sin(t)
+plot(t,X,'R-')
+xlabel('t')
+ylabel('Plotting sin(t)')
+title('Plotting  sin(t)')
+legend('sin(t)')
+text(pi,0,'\leftarrow sin(\pi)','FontSize',18)
+
+%   Adding new plots to existing plots, Printing Text in Greek Letters.
+%   Adding sin(3*t)to sin(t)
+%
+subplot(2,1,2)
+hold on
+Y=cos(3*t)
+p1 = plot(t,Y,"g","DisplayName","Cos Theta")
+plot(t,Y,'B +-')
+xlabel('Radians')
+ylabel('Amplitude')
+legend('sin(t)','Cos(3t)')
+p1.Marker="*"
+p1.MarkerEdgeColor="white"
+title('Plotting Cos(3{\alpha})Over existing curve sin({\alpha})')
+p2 = plot(t,X,"DisplayName","Sin Theta")
+p2.Marker="+"
+p2.MarkerEdgeColor="black"
+
+Discussion: 
+Generating and plotting a Sinusoidal Signal: Input parameter t was generated using colon operator (start:step:stop). Sinusoidal Signal was generated using sin() and plotted using plot().
+Plotting with Graphical Enhancements:
+Titling:
+title(‘string’) outputs the string at the top and in the center of the current axes.
+Labelling:
+xlabel(‘string’) labels the x-label of the current axes.
+ylabel(‘string’) labels the y-label of the current axes.
+Adding Text:
+text(x,y,z,’string’,’PropertyName’,PropertyValue..):adds the string in quotes to the location defined by the coordinates and uses the values for the specified text properties.
+Adding Legends:
+legend(‘string1’,’string2’,..):displays a legend in the current axes using the specified strings to label each set of data.
+Adding New Plots to Existing Plot: hold on:
+It retains the current plot and certain axes properties so that subsequent graphing commands add to the existing graph.
+Printing Text in Greek Letters:
+You can define text that includes symbols and Greek letters using the text function, assigning the character sequence to the String property of text objects. You can also include these character sequences in the string arguments of the title, xlabel, ylabel and zlabel functions. Example: xlabel(‘Time \musec.’) displays Time μ on graph.
+
+
+Result:
+Sinusoidal Signals were successfully generated and Plotted and several Graphical Enhancements like Tilting, Labelling, Adding Text, Adding Legends, Adding New Plots to Existing Plot, Printing Text in Greek Letters were successfully performed.
+ Conclusion:
+Sinusoidal Signal were successfully generated and plotted with several graphical enhancements.
